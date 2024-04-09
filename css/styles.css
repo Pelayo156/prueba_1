@@ -47,3 +47,34 @@
     color: white;
     margin-left: 20px;
 }
+
+.header-productos{
+    margin: 10px;
+    font-size: 20px;
+    padding: 0px 5px;
+    color: black;
+}
+
+.phone-card{
+    display: inline-block;
+    padding-block-end: 40px;
+    width: 20px;
+    margin-left: 700px;
+    border: 2px solid;
+    font-size: 80%;
+    border-color: black;
+    background-color: rgb(230, 230, 230);
+}
+
+.icon-phone{
+    display: flex;
+    border-radius: 80%;
+    border: 2px solid;
+    border-color: black;
+}
+
+.phone-text{
+    position: absolute;
+    margin-left: 20px;
+    text-align: center;
+}
