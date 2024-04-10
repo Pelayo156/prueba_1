@@ -78,3 +78,10 @@
     margin-left: 30px;
     margin-bottom: 10px;
 }
+
+.mensaje-oferta{
+    margin: 2px 0;
+    border-radius: 10px;
+    border: 1px solid rgb(177, 177, 196);
+    background-color: aliceblue;
+}
