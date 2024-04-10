@@ -81,9 +81,9 @@
 
 .mensaje-oferta{
     margin: 2px 0;
-    border-radius: 10px;
-    border: 1px solid rgb(177, 177, 196);
-    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid #b7dde3;
+    background-color: #D1ECF1;
 }
 
 .descuento {
