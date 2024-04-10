@@ -85,3 +85,53 @@
     border: 1px solid rgb(177, 177, 196);
     background-color: aliceblue;
 }
+
+.descuento {
+    display: inline;
+    text-decoration-line: line-through;
+    font-weight: 600;
+    color: gray;
+}
+
+.footer-tittles {
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    font-family: "TradeGothicForNike","Helvetica",sans-serif;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.footer-words {
+    margin: 0;
+    font-size: 12px;
+    color: white;
+}
+
+.social-media {
+    font-size: 25px;
+    color: white;
+    margin-left: 14px;
+}
+
+.final-words {
+    display: inline; 
+    font-size: 10px; 
+    color: white;
+    margin-left: 10px;
+}
+
+/* Estilo para vista nosotros.html */
+
+.nosotros-row {
+    padding: 20px 0px;
+}
+
+.nosotros-tittle {
+    font-weight: 600;
+}
+
+.nosotros-photo {
+    width: 400px;
+    height: 200px;
+}
