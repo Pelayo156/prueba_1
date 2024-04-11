@@ -148,3 +148,17 @@
     border-radius: 20px;
     background: linear-gradient(red, orange, yellow, rgb(5, 255, 5), rgb(0, 255, 255), blue, rgb(255, 0, 255), rgb(255, 107, 186));
 }
+
+/* Modal Login */
+
+.tittle-login {
+    font-weight: 700;
+}
+
+.input-login {
+    border-radius: 20px;
+}
+
+.label-login {
+    font-weight: 500;
+}
