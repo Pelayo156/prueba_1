@@ -136,18 +136,3 @@
     height: 200px;
     border-radius: 3px;
 }
-
-/* Estilos para vista login.html */
-
-#container-login {
-    border: 2px solid black; 
-    width: 400px; 
-    height: 600px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
-    background: linear-gradient(red, orange, yellow, rgb(5, 255, 5), rgb(0, 255, 255), blue, rgb(255, 0, 255), rgb(255, 107, 186));
-}
-
-/* Modal Login */
-
