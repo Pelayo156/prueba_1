@@ -140,3 +140,15 @@
 .producto:hover {
     cursor: pointer;
 }
+
+/* Estilos carrito de compras */
+.img-carrito {
+    width: 128px;
+    height: 114px;
+}
+
+.producto-carrito {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}

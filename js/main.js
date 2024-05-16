@@ -34,17 +34,20 @@ $(document).ready(function() {
         {
             id: 6,
             nombre: "Bravery Salmon Adult (2kg) Alimento para gato",
-            precio: 22990
+            precio: 22990,
+            url_image: "./images/bravery_salmon_adult_gato.jpeg"
         },
         {
             id: 7,
             nombre: "Bravery Pork Adult (2kg) Alimento para perro",
-            precio: 28990
+            precio: 28990,
+            url_image: "./images/bravery_pork_adult_perro.jpeg"
         },
         {
             id: 8,
             nombre: "Premier gatos adultos de pelo largo (7.5kg)",
-            precio: 46990
+            precio: 46990,
+            url_image: "./images/premier_gatos_pelo_largo.jpeg"
         }
     ];
 
@@ -63,8 +66,20 @@ $(document).ready(function() {
 
         // Creo template para agregar el html al carrito de compras
         let template_carrito = `
-            <div><div>
+            <div class="container producto-carrito">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="" alt="" class="img-carrito">
+                    </div>
+                    <div class="col-6 text-left">
+                        <p>Nombre: </p>
+                        <p>Precio: </p>
+                    </div>
+                </div>
+            </div>
         `;
+
+        document.querySelector("#body-carrito").innerHTML(template_carrito);
 
         // Muestro productos seleccionados
         console.log(productos_carrito);
