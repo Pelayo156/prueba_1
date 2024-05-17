@@ -65,6 +65,27 @@ $(document).ready(function() {
         });
 
         // Creo template para agregar el html al carrito de compras
+
+        if (localStorage.getItem("productos_carrito")) {
+            localStorage.removeItem("productos_carrito");
+            localStorage.setItem("productos_carrito", JSON.stringify(productos_carrito));
+        } else {
+            localStorage.setItem("productos_carrito", JSON.stringify(productos_carrito));
+        }
+
+        // Muestro productos seleccionados
+        console.log(productos_carrito);
+    });
+
+    $(document).ready(function cargarProductos() {
+        if(localStorage.getItem("productos_carrito")) {
+            if(document.querySelector("#body-carrito")) {
+                document.querySelector("#body-carrito").innerHTML = "Hola Mundo";
+            }
+        }
+    });
+
+    function agregarProductos(lista_productos) {
         let template_carrito = `
             <div class="container producto-carrito">
                 <div class="row">
@@ -79,9 +100,8 @@ $(document).ready(function() {
             </div>
         `;
 
-        document.querySelector("#body-carrito").innerHTML(template_carrito);
-
-        // Muestro productos seleccionados
-        console.log(productos_carrito);
-    });
+        lista_productos.forEach(producto => {
+            
+        });
+    }
 });
