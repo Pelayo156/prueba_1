@@ -83,6 +83,13 @@ $(document).ready(function() {
         return templates;
     }
 
+    function obtenerTotalCompra(lista_productos) {
+        let total_compra = 0;
+
+        lista_productos.forEach(producto => total_compra += producto.precio);
+        return total_compra;
+    }
+
     // Evento para obtener id del producto que escoge el usuario.
     $(".mas-vendido").submit(function(event) {
         event.preventDefault();
@@ -116,9 +123,20 @@ $(document).ready(function() {
                 html_carrito.innerHTML = "<h1>Mi compra</h1>";
 
                 let productos_ls = JSON.parse(localStorage.getItem("productos_carrito"));
-                templateProductos(productos_ls).forEach(producto => {
-                    html_carrito.innerHTML += producto;
+                templateProductos(productos_ls).forEach(template_producto => {
+                    html_carrito.innerHTML += template_producto;
                 })
+                html_carrito.innerHTML += `
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-4 text-left">
+                                <h3 style="text-decoration: underline;">Detalle</h3>
+                                <h4 class="detalle-compra">Total productos: ${productos_ls.length}</h4>
+                                <h4 class="detalle-compra">Total compra: $${obtenerTotalCompra(productos_ls)}</h4>
+                            </div>
+                        </div>
+                    </div>
+                `;
             }
         }
     });

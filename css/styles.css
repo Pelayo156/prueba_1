@@ -153,3 +153,8 @@
     padding: 20px;
     margin: 20px 0px;
 }
+
+.detalle-compra {
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
