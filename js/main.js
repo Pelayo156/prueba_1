@@ -141,8 +141,11 @@ $(document).ready(function() {
         }
     });
 
+    // Creacion de una variable que lea la seleccion del usuario
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
+            //Funcion para leer la elección del usuario
             function cambiaTema(ev){
+                //Si está seleccionado, se procede a cambiar el tema en el css
                 if(ev.target.checked){
                     document.documentElement.setAttribute('tema', 'light');
                 } else {

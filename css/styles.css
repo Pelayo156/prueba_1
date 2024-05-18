@@ -159,7 +159,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/*Estilo para el cambio de color y el boton de cambio*/
+/*Estilo para el cambio de color*/
 :root {
     --color-fuente: black;
     --color-fondo: white;
@@ -240,6 +240,7 @@
     
 }
 
+/*Estilo para la checkbox*/
 #switch {
     position: relative;
     display: inline-block;
