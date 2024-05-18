@@ -54,6 +54,36 @@ $(document).ready(function() {
     // Creo una lista para guardar los productos que van a estar en el carrito de compra.
     let productos_carrito = [];
 
+    if (localStorage.getItem("productos_carrito")) {
+        productos_carrito = JSON.parse(localStorage.getItem("productos_carrito"));
+    }
+
+    // Función para hacer las plantillas de todos los productos que fueron agregados al carrito de compras.
+    function templateProductos(lista_productos) {
+        let templates = [];
+
+        lista_productos.forEach(producto => {
+            // Creo una plantilla para agregar el html al carrito de compras.
+            templates.push(
+                `
+                <div class="container producto-carrito">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="${producto.url_image}" alt="" class="img-carrito">
+                        </div>
+                        <div class="col-6 text-left">
+                            <p>Nombre: ${producto.nombre}</p>
+                            <p>Precio: $${producto.precio}</p>
+                        </div>
+                    </div>
+                </div>
+                `
+            );
+        });
+        return templates;
+    }
+
+    // Evento para obtener id del producto que escoge el usuario.
     $(".mas-vendido").submit(function(event) {
         event.preventDefault();
 
@@ -64,44 +94,32 @@ $(document).ready(function() {
             }
         });
 
-        // Creo template para agregar el html al carrito de compras
-
-        if (localStorage.getItem("productos_carrito")) {
+        // Almaceno los productos escogidos al localstorage.
+       if(localStorage.getItem("productos_carrito")) {
             localStorage.removeItem("productos_carrito");
+            
             localStorage.setItem("productos_carrito", JSON.stringify(productos_carrito));
-        } else {
+            alert("Producto agregado al carrito!");
+       } else {
             localStorage.setItem("productos_carrito", JSON.stringify(productos_carrito));
-        }
+            alert("Producto agregado al carrito!");
+       }
 
-        // Muestro productos seleccionados
-        console.log(productos_carrito);
+       let productos_ls = JSON.parse(localStorage.getItem("productos_carrito"));
+       console.log(productos_ls);
     });
 
     $(document).ready(function cargarProductos() {
         if(localStorage.getItem("productos_carrito")) {
             if(document.querySelector("#body-carrito")) {
-                document.querySelector("#body-carrito").innerHTML = "Hola Mundo";
+                let html_carrito = document.querySelector("#body-carrito");
+                html_carrito.innerHTML = "<h1>Mi compra</h1>";
+
+                let productos_ls = JSON.parse(localStorage.getItem("productos_carrito"));
+                templateProductos(productos_ls).forEach(producto => {
+                    html_carrito.innerHTML += producto;
+                })
             }
         }
     });
-
-    function agregarProductos(lista_productos) {
-        let template_carrito = `
-            <div class="container producto-carrito">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="" alt="" class="img-carrito">
-                    </div>
-                    <div class="col-6 text-left">
-                        <p>Nombre: </p>
-                        <p>Precio: </p>
-                    </div>
-                </div>
-            </div>
-        `;
-
-        lista_productos.forEach(producto => {
-            
-        });
-    }
 });
