@@ -1,57 +1,81 @@
 $(document).ready(function() {
-    // Creación de una "base de datos" local
+    // Creo una "base de datos" local
     const productos = [
         {
             id: 1,
             nombre: "Bravery Salmon Adult (4kg) Alimento para perro",
             precio: 26990,
-            url_image: "./images/bravery_salmon_adult_perro.png"
+            url_image: "./images/bravery_salmon_adult_perro.jpeg"
         },
         {
             id: 2,
             nombre: "Bravery Chicken Adult (2kg) Alimento para gato",
             precio: 21990,
-            url_image: "./images/bravery_chicken_adult_gato.png"
+            url_image: "./images/bravery_chicken_adult_gato.jpeg"
         },
         {
             id: 3,
             nombre: "Fit Formula arena para gato 3.2kg",
             precio: 14990,
-            url_image: "./images/fit_formula_arena_gato.png"
+            url_image: "./images/fit_formula_arena_gato.jpg"
         },
         {
             id: 4,
             nombre: "Fit Formula Adulto (10kg) Alimento para gato",
             precio: 24792,
-            url_image: "./images/fit_formula_adult_gato.png"
+            url_image: "./images/fit_formula_adult_gato.jpeg"
         },
         {
             id: 5,
             nombre: "Fit Formula Adulto (20kg) Alimento para perro",
             precio: 37592,
-            url_image: "./images/fit_formula_adult_perro.png"
+            url_image: "./images/fit_formula_adult_perro.jpeg"
         },
         {
             id: 6,
             nombre: "Bravery Salmon Adult (2kg) Alimento para gato",
             precio: 22990,
-            url_image: "./images/bravery_salmon_adult_gato.png"
+            url_image: "./images/bravery_salmon_adult_gato.jpeg"
         },
         {
             id: 7,
             nombre: "Bravery Pork Adult (2kg) Alimento para perro",
             precio: 28990,
-            url_image: "./images/bravery_pork_adult_perro.png"
+            url_image: "./images/bravery_pork_adult_perro.jpeg"
         },
         {
             id: 8,
             nombre: "Premier gatos adultos de pelo largo (7.5kg)",
             precio: 46990,
-            url_image: "./images/premier_gatos_pelo_largo.png"
+            url_image: "./images/premier_gatos_pelo_largo.jpeg"
+        },
+        {
+            id: 9,
+            nombre: "Fit Formula Adult (4kg) Alimento para perro",
+            precio: 26990,
+            url_image: "./images/fit_formula_adult_perro.jpeg"
+        },
+        {
+            id: 10,
+            nombre: "Fit Formula Adult (2kg) Alimento para perro",
+            precio: 16990,
+            url_image: "./images/fit_formula_adult_perro.jpeg"
+        },
+        {
+            id: 11,
+            nombre: "Bravery Chicken Adult (4kg) Alimento para perro",
+            precio: 26990,
+            url_image: "./images/bravery_chicken_adult_perro.png"
+        },
+        {
+            id: 13,
+            nombre: "Desparasitante Bravecto para perros de entre 20kg-40kg",
+            precio: 47990,
+            url_image: "./images/desparasitante_bravecto_20kg.png"
         }
     ];
 
-    // Creación de una lista para guardar los productos que van a estar en el carrito de compra.
+    // Creo una lista para guardar los productos que van a estar en el carrito de compra.
     let productos_carrito = [];
 
     if (localStorage.getItem("productos_carrito")) {
@@ -63,7 +87,7 @@ $(document).ready(function() {
         let templates = [];
 
         lista_productos.forEach(producto => {
-            // Creación de una plantilla para agregar el html al carrito de compras.
+            // Creo una plantilla para agregar el html al carrito de compras.
             templates.push(
                 `
                 <div class="container producto-carrito">
@@ -101,7 +125,7 @@ $(document).ready(function() {
             }
         });
 
-        // Almacenamiento de los productos escogidos al localstorage.
+        // Almaceno los productos escogidos al localstorage.
        if(localStorage.getItem("productos_carrito")) {
             localStorage.removeItem("productos_carrito");
             
@@ -140,17 +164,4 @@ $(document).ready(function() {
             }
         }
     });
-
-    // Creacion de una variable que lea la seleccion del usuario
-    const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
-            //Funcion para leer la elección del usuario
-            function cambiaTema(ev){
-                //Si está seleccionado, se procede a cambiar el tema en el css
-                if(ev.target.checked){
-                    document.documentElement.setAttribute('tema', 'light');
-                } else {
-                    document.documentElement.setAttribute('tema', 'dark');
-                }
-            }
-            colorSwitch.addEventListener('change', cambiaTema);
 });
