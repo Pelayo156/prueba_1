@@ -2,6 +2,7 @@ $(document).ready(function() {
     // Creo una "base de datos" local
     const productos = [
         {
+            // Productos vista index.html
             id: 1,
             nombre: "Bravery Salmon Adult (4kg) Alimento para perro",
             precio: 26990,
@@ -49,6 +50,7 @@ $(document).ready(function() {
             precio: 46990,
             url_image: "./images/premier_gatos_pelo_largo.jpeg"
         },
+        // Productos vista perro.html
         {
             id: 9,
             nombre: "Fit Formula Adult (4kg) Alimento para perro",
@@ -68,10 +70,83 @@ $(document).ready(function() {
             url_image: "./images/bravery_chicken_adult_perro.png"
         },
         {
-            id: 13,
+            id: 12,
             nombre: "Desparasitante Bravecto para perros de entre 20kg-40kg",
             precio: 47990,
             url_image: "./images/desparasitante_bravecto_20kg.png"
+        },
+        {
+            id: 13,
+            nombre: "Desparasitante Bravecto para perros de entre 4.5kg-10kg",
+            precio: 24990,
+            url_image: "./images/desparasitante_bravecto_10kg.png"
+        },
+        {
+            id: 14,
+            nombre: "Correa Pepolli Premium talla M",
+            precio: 23990,
+            url_image: "./images/pepolli_correa_premium_m.png"
+        },
+        {
+            id: 15,
+            nombre: "Zeedog arnés ajustable atlanta para perro talla L",
+            precio: 31990,
+            url_image: "./images/zeedog_arnes_ajustable_atlanta.png"
+        },
+        {
+            id: 16,
+            nombre: "Zeedog arnés ajustable atlanta para perro talla L",
+            precio: 31990,
+            url_image: "./images/zeedog_arnes_ajustable_atlanta.png"
+        },
+        // Productos vista gato.html
+        {
+            id: 17,
+            nombre: "Taste of the Wild Canyon River (6.6kg) alimento para gato",
+            precio: 40493,
+            url_image: "./images/taste-of-the-wild-gato.png"
+        },
+        {
+            id: 18,
+            nombre: "Fit Formula Adulto (10kg) Alimento para gato",
+            precio: 24792,
+            url_image: "./images/fit_formula_adult_gato.png"
+        },
+        {
+            id: 19,
+            nombre: "Bravery Salmon Adult (4kg) Alimento para gato",
+            precio: 26990,
+            url_image: "./images/bravery_salmon_adult_gato.png"
+        },
+        {
+            id: 20,
+            nombre: "Bravery Chicken Adult (4kg) Alimento para gato",
+            precio: 26990,
+            url_image: "./images/bravery_chicken_adult_gato.png"
+        },
+        {
+            id: 21,
+            nombre: "Olympus Cat Rascador gris & beige",
+            precio: 62990,
+            url_image: "./images/olympus-cat-rascador-gray-breige.png"
+        },
+        {
+            id: 22,
+            nombre: "Collar zeecat para gato con diseño de calaveras",
+            precio: 5990,
+            url_image: "./images/zeecat_collar_skull_gato.png"
+        },
+        {
+            id: 23,
+            nombre: "Fit Formula arena para gato 3.2kg",
+            precio: 14990,
+            url_image: "./images/fit_formula_arena_gato.png"
+        },
+        {
+            id: 24,
+            nombre: "Odour Buster arena para gato 6kg",
+            precio: 16990,
+            url_image: "./images/odour_buster_arena_gato.png"
         }
     ];
 
