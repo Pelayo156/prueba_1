@@ -167,7 +167,6 @@ $(document).ready(function() {
 
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
     function cambiaTema(ev){
-        colorSwitch.classList.toggle('active')
         if(ev.target.checked){
             document.documentElement.setAttribute('tema', 'light');
             localStorage.setItem('dark-mode', 'true');     
