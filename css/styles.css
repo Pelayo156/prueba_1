@@ -180,7 +180,7 @@
     --envio-fondo: #F5F5F5;
 }
 
-[tema="light"]{
+[tema="dark"]{
     --color-fuente: white;
     --color-fondo: rgb(44, 44, 44);
     --brightness-img: 85%;

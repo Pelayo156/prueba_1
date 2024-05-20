@@ -167,12 +167,25 @@ $(document).ready(function() {
 
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
     function cambiaTema(ev){
+        colorSwitch.classList.toggle('active')
         if(ev.target.checked){
             document.documentElement.setAttribute('tema', 'light');
+            localStorage.setItem('dark-mode', 'true');     
         } else {
             document.documentElement.setAttribute('tema', 'dark');
+            localStorage.setItem('dark-mode', 'false');
         }
+        
     }
     colorSwitch.addEventListener('change', cambiaTema);
+
+    //Obtencion de modo actual.
+    if(localStorage.getItem('dark-mode') === 'true'){
+        document.documentElement.setAttribute('tema', 'light');
+        colorSwitch.checked = true;
+    } else {
+        document.documentElement.setAttribute('tema', 'dark');
+        colorSwitch.checked = false;
+    }
     
 });
