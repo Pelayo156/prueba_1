@@ -240,6 +240,7 @@ $(document).ready(function() {
         }
     });
 
+    //Obtención de la checkbox
     const colorSwitch = document.querySelector('#switch input[type="checkbox"]');
     function cambiaTema(ev){
         if(ev.target.checked){

@@ -180,7 +180,7 @@
     --envio-fondo: #F5F5F5;
 }
 
-[tema="dark"]{
+[tema="light"]{
     --color-fuente: white;
     --color-fondo: rgb(44, 44, 44);
     --brightness-img: 85%;
@@ -208,22 +208,6 @@
 
     img {
         filter: brightness(var(--brightness-img));
-    }
-    
-    .nav-link {
-        color: var(--color-fondo);
-    }
-
-    .nombre-tienda{
-        color: var(--color-fondo);
-    }
-
-    .logo{
-        color: var(--color-fondo);
-    }
-
-    .icon-menu{
-        color: var(--color-fondo);
     }
     
     .envio-bar{
