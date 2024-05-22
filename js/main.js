@@ -276,6 +276,10 @@ $(document).ready(function() {
                 alert("El campo email no puede estar vacio.");
                 return;
             };
+            if (!email.includes("@")){
+                alert("Su email debe contener un @")
+                return;
+            }
             if (password === ""){
                 alert("La contraseña no puede estar vacia.");
                 return;
