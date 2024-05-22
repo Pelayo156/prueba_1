@@ -12,6 +12,14 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,7 +27,7 @@
     <title>Pets Products</title>
 </head>
 
-<body>
+<body class="body">
     <!-- Menú principal -->
     <div class="container-lg" id="menu-principal">
         <div class="row">
@@ -61,6 +69,10 @@
             </div>
 
             <div class="col-2">
+                <label id="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
                 <a style="text-decoration: none; cursor: pointer;" data-toggle="modal" data-target="#modal-login">
                     <i class="fa-regular fa-user icon-menu"></i>
                 </a>
@@ -95,7 +107,7 @@
         </div>
         <div class="modal-footer justify-content-center" style="background-color: white; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Ingresar</button>
+          <button type="button" class="btn btn-primary" id="btn-login">Ingresar</button>
         </div>
       </div>
     </div>
@@ -107,12 +119,10 @@
             <div class="col-8" style="padding-top: 20px;">
                 <h3 class="nosotros-tittle">¿Quiénes somos?</h3>
                 <p style="text-align: justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis incidunt fuga, enim magnam
-                    eum nihil asperiores! Reiciendis molestias quo non officia mollitia nemo suscipit, dolorem labore
-                    distinctio at iure!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aliquid sint adipisci animi
-                    illum. Asperiores esse quibusdam eos, atque placeat ea ipsa quasi adipisci nisi veritatis ullam
-                    voluptas distinctio laudantium.
+                    Somos PetProducts, una tienda tienda para mascota donde encontrarás una gran variedad de productos para tu querido y pequeño amigo.
+                    En nuestro amplio y acogedor espacio, nos dedicamos a brindar a tus compañeros peludos el mejor trato y los productos de más alta calidad.
+                    Somos un equipo de apasionados amantes de los animales, dedicados completamente en el servicio hacia tus queridos compañeros peludos. Nos esforzamos
+                    por ofrecer un servicio personalizado y amigable, respaldado por el conocimiento y la experiencia de nuestro equipo de expertos en cuidado animal.
                 </p>
             </div>
 
@@ -126,11 +136,9 @@
             <div class="col-8">
                 <h3 class="nosotros-tittle">¿Cuál es nuestro proposito?</h3>
                 <p style="text-align: justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis incidunt fuga, enim magnam
-                    eum nihil asperiores! Reiciendis molestias quo non officia mollitia nemo suscipit, dolorem labore
-                    distinctio at iure!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aliquid sint adipisci animi
-                    illum. Asperiores esse quibusdam eos, atque placeat ea ipsa quasi.
+                    Nuestro principal objetivo es simple pero poderoso, queremos ser el desitno número uno para todos los amantes de las mascotas
+                    y brindar todo lo que una mascota necesita para ser feliz. Desde las mejores marcas de alimentos para asegurar su bienestar y 
+                    prolongar su vida, hasta los juguetes más resistentes para tener una vida llena de momentos divertidos.
                 </p>
             </div>
 
@@ -143,11 +151,11 @@
             <div class="col-8">
                 <h3 class="nosotros-tittle">¿Cómo y por qué se creó Pets Products?</h3>
                 <p style="text-align: justify;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quis incidunt fuga, enim magnam
-                    eum nihil asperiores! Reiciendis molestias quo non officia mollitia nemo suscipit, dolorem labore
-                    distinctio at iure!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit aliquid sint adipisci animi
-                    illum. Asperiores esse quibusdam eos, atque placeat ea ipsa quasi.
+                    PetProducts nació de la pasión compartida de un grupo de amigos por los animales y el deseo de crear un espacio donde tanto las mascotas
+                    como sus dueños se sintieran bienvenidos y atendidos, además de crear un ambiente familiar para su comodidad.
+                    La idea surgió cuando nos dimos cuenta de que muchos dueños de mascotas enfrentaban desafíos al encontrar productos de calidad y recibir un
+                    confiable asesoramiento sobre el cuidado de sus mascotas. Nos propusimos llenar ese vacío al fundar PetProducts, con la visión de ser más queremos
+                    una simple tienda para mascotas, sino un recurso integral para la comunidad de amantes de los animales.
                 </p>
             </div>
 

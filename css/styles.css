@@ -178,6 +178,8 @@
     --color-fondo: white;
     --brightness-img: 100%;
     --envio-fondo: #F5F5F5;
+    --mensaje-oferta: #D1ECF1;
+    --producto-fondo: white;
 }
 
 [tema="light"]{
@@ -185,6 +187,8 @@
     --color-fondo: rgb(44, 44, 44);
     --brightness-img: 85%;
     --envio-fondo: #9b9b9b;
+    --mensaje-oferta: #8f2121;
+    --producto-fondo: rgb(23, 37, 58);
 }
 
 @media screen {
@@ -235,6 +239,42 @@
         color: var(--color-fondo);
     }
     
+    /* Estilos carrito de compras */
+    .img-carrito {
+        width: 128px;
+        height: 114px;
+    }
+
+    .producto-carrito {
+        background: var(--producto-fondo);
+        padding: 20px;
+        margin: 30px 0px;
+        position: relative;
+    }
+
+    .producto-carrito::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        content: ' ';
+        background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        width: 100%;
+        height: 100%;
+        filter: blur(6px);
+        z-index: -1;
+    }
+
+    .detalle-compra {
+        color: gray;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .mensaje-oferta{
+        margin: 2px 0;
+        border-radius: 5px;
+        border: 1px solid #b7dde3;
+        background-color: var(--mensaje-oferta);
+    }
+
 }
 
 /*Estilo para la checkbox*/

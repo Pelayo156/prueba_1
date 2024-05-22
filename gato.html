@@ -27,7 +27,7 @@
   <title>Gato</title>
 </head>
 
-<body>
+<body class="body">
   <!-- Menú principal -->
   <div class="container-lg" id="menu-principal">
     <div class="row">
@@ -69,6 +69,10 @@
       </div>
 
       <div class="col-2">
+        <label id="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
         <a style="text-decoration: none; cursor: pointer;" data-toggle="modal" data-target="#modal-login">
           <i class="fa-regular fa-user icon-menu"></i>
         </a>
@@ -103,7 +107,7 @@
         </div>
         <div class="modal-footer justify-content-center" style="background-color: white; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Ingresar</button>
+          <button type="button" class="btn btn-primary" id="btn-login">Ingresar</button>
         </div>
       </div>
     </div>
@@ -244,22 +248,27 @@
   <div class="container-lg" style="margin: 20px 40px;">
     <div class="row" style="border-top: 1.5px solid black;">
       <h3 class="nosotros-tittle" style="margin-top: 40px;">Variedad de comida y snacks para tu gato</h3>
-      <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt atque ut
-        doloremque modi voluptas. Esse magni nulla, accusamus, aliquam iure optio officia deleniti eligendi explicabo
-        sequi, saepe modi libero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nulla vitae architecto, cum nihil nesciunt sed,
-        beatae soluta sequi quibusdam natus facilis enim ab accusamus tenetur quasi quidem ducimus minus.
+      <p style="text-align: justify;"> En nuestra categoría de comida para gatos, encontrarás alimento natural que favorece la asimilación de nutrientes. También
+        ofrecemos alimentos especiales para gatitos que apoyan a su crecimiento.
+
+        Si tu gato necesita una dieta específica, explora y consultanos, estamos aquí para ti y tu gatito.
+
+        Sorpende a tu felino con nuestra comida húmeda en sobres y latas, disponible en varios sabores.
+
+        Mima a tu felino con nuestros deliciosos snacks que además cuidan su salud bucal y son perfectos premios.
       </p>
     </div>
 
     <div class="row" style="margin-top: 20px;">
       <h3 class="nosotros-tittle">Cuidados y accesorios para tu gato</h3>
-      <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos consequuntur, in
-        nulla eaque totam, nam, culpa aperiam doloribus explicabo cum reprehenderit nostrum cupiditate necessitatibus
-        porro illo vero. Distinctio, eveniet voluptatem.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsa et deleniti consequatur quae sunt minus
-        inventore eaque expedita quia aliquid tenetur fugit, tempora accusantium quisquam pariatur hic molestias
-        sapiente.
+      <p style="text-align: justify;">En nuestra tienda, encontrarás todo lo que necesitas para el cuidado y bienestar de tu gato. 
+        Desde productos de higiene como arenas sanitarias y cepillos, hasta productos para la salud, como antipulgas y suplementos vitamínicos.
+
+        Ofrecemos una amplia gama de accesorios para gatos, incluyendo rascadores, camas, y juguetes interactivos que mantendrán a tu felino entretenido y activo.
+
+        También contamos con transportadoras y areneros de diferentes tamaños y diseños para mayor comodidad y estilo.
+
+        Visítanos y descubre cómo podemos ayudarte a brindarle a tu gato una vida más cómoda y feliz.
       </p>
     </div>
   </div>
@@ -324,6 +333,7 @@
 
 
     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"></script>

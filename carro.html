@@ -27,7 +27,7 @@
   <title>Carro</title>
 </head>
 
-<body>
+<body class="body">
   <!-- Menú principal -->
   <div class="container-lg" id="menu-principal">
     <div class="row">
@@ -69,6 +69,10 @@
       </div>
 
       <div class="col-2">
+        <label id="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
         <a style="text-decoration: none; cursor: pointer;" data-toggle="modal" data-target="#modal-login">
           <i class="fa-regular fa-user icon-menu"></i>
         </a>
@@ -103,7 +107,7 @@
         </div>
         <div class="modal-footer justify-content-center" style="background-color: white; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary">Ingresar</button>
+          <button type="button" class="btn btn-primary" id="btn-login">Ingresar</button>
         </div>
       </div>
     </div>
